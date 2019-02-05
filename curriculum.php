@@ -70,235 +70,85 @@ include('header.php'); ?>
 												</div>
 											</div>
 									</td>
-									<td class="text-left">Crazy Toys</td>
-									<td>1</td>
-									<td>$20</td>
-									<td>$40</td>
+									<td class="text-left">Subject Description1 </td>
+									<td>CS105</td>
+									<td>3</td>
 								</tr>
-								<tr>
-									<td class="text-center">2</td>
-									<td class="text-left">Beautiful flowers</td>
-									<td>2</td>
-									<td>$50</td>
-									<td>$100</td>
-								</tr>
-							<tfoot>
-							<tr>
-								<td colspan="4">total balance :</td>
-								<td>$140</td>
-							</tr>
-							<tr class="text-capitalize">
-								<th class="text-center bg-primary" colspan="5">Second Semester</th>
-							</tr>
 								<tr>
 									<td>
-										<div class="form-group row">	
+										<div class="form-group row mb-0" >	
 												<div class="col-12">
-													<select class="form-control">
+													<select class="form-control form-control-sm">
 											      <option>Admin</option>
 											      <option>Program Chair</option>
 											    </select>
 												</div>
 											</div>
 									</td>
-									<td class="text-left">Crazy Toys</td>
-									<td>1</td>
-									<td>$20</td>
-									<td>$40</td>
+									<td class="text-left">Subject Description1 </td>
+									<td>CS105</td>
+									<td>3</td>
 								</tr>
-								<tr>
-									<td class="text-center">2</td>
-									<td class="text-left">Beautiful flowers</td>
-									<td>2</td>
-									<td>$50</td>
-									<td>$100</td>
-								</tr>
-								<tr class="text-capitalize">
-								<th class="text-center bg-primary" colspan="5">Second Year</th>
-							</tr>
-							<tr class="text-capitalize">
-								<th class="text-center bg-primary" colspan="5">First Semester</th>
-							</tr>
 								<tr>
 									<td>
-										<div class="form-group row">	
+										<div class="form-group row mb-0" >	
 												<div class="col-12">
-													<select class="form-control">
+													<select class="form-control form-control-sm">
 											      <option>Admin</option>
 											      <option>Program Chair</option>
 											    </select>
 												</div>
 											</div>
 									</td>
-									<td class="text-left">Crazy Toys</td>
-									<td>1</td>
-									<td>$20</td>
-									<td>$40</td>
+									<td class="text-left">Subject Description1 </td>
+									<td>CS105</td>
+									<td>3</td>
 								</tr>
-								<tr>
-									<td class="text-center">2</td>
-									<td class="text-left">Beautiful flowers</td>
-									<td>2</td>
-									<td>$50</td>
-									<td>$100</td>
-								</tr>
-							<tfoot>
-							<tr>
-								<td colspan="4">total balance :</td>
-								<td>$140</td>
-							</tr>
-							<tr class="text-capitalize">
-								<th class="text-center bg-primary" colspan="5">Second Semester</th>
-							</tr>
 								<tr>
 									<td>
-										<div class="form-group row">	
+										<div class="form-group row mb-0" >	
 												<div class="col-12">
-													<select class="form-control">
+													<select class="form-control form-control-sm">
 											      <option>Admin</option>
 											      <option>Program Chair</option>
 											    </select>
 												</div>
 											</div>
 									</td>
-									<td class="text-left">Crazy Toys</td>
-									<td>1</td>
-									<td>$20</td>
-									<td>$40</td>
+									<td class="text-left">Subject Description1 </td>
+									<td>CS105</td>
+									<td>3</td>
 								</tr>
-								<tr>
-									<td class="text-center">2</td>
-									<td class="text-left">Beautiful flowers</td>
-									<td>2</td>
-									<td>$50</td>
-									<td>$100</td>
-								</tr>
-								<tr class="text-capitalize">
-								<th class="text-center bg-primary" colspan="5">Third Year</th>
-							</tr>
-							<tr class="text-capitalize">
-								<th class="text-center bg-primary" colspan="5">First Semester</th>
-							</tr>
 								<tr>
 									<td>
-										<div class="form-group row">	
+										<div class="form-group row mb-0" >	
 												<div class="col-12">
-													<select class="form-control">
+													<select class="form-control form-control-sm">
 											      <option>Admin</option>
 											      <option>Program Chair</option>
 											    </select>
 												</div>
 											</div>
 									</td>
-									<td class="text-left">Crazy Toys</td>
-									<td>1</td>
-									<td>$20</td>
-									<td>$40</td>
+									<td class="text-left">Subject Description1 </td>
+									<td>CS105</td>
+									<td>3</td>
 								</tr>
-								<tr>
-									<td class="text-center">2</td>
-									<td class="text-left">Beautiful flowers</td>
-									<td>2</td>
-									<td>$50</td>
-									<td>$100</td>
-								</tr>
-							<tfoot>
-							<tr>
-								<td colspan="4">total balance :</td>
-								<td>$140</td>
-							</tr>
-							<tr class="text-capitalize">
-								<th class="text-center bg-primary" colspan="5">Second Semester</th>
-							</tr>
 								<tr>
 									<td>
-										<div class="form-group row">	
+										<div class="form-group row mb-0" >	
 												<div class="col-12">
-													<select class="form-control">
+													<select class="form-control form-control-sm">
 											      <option>Admin</option>
 											      <option>Program Chair</option>
 											    </select>
 												</div>
 											</div>
 									</td>
-									<td class="text-left">Crazy Toys</td>
-									<td>1</td>
-									<td>$20</td>
-									<td>$40</td>
+									<td class="text-left">Subject Description1 </td>
+									<td>CS105</td>
+									<td>3</td>
 								</tr>
-								<tr>
-									<td class="text-center">2</td>
-									<td class="text-left">Beautiful flowers</td>
-									<td>2</td>
-									<td>$50</td>
-									<td>$100</td>
-								</tr>
-								<tr class="text-capitalize">
-								<th class="text-center bg-primary" colspan="5">Fourth Year</th>
-							</tr>
-							<tr class="text-capitalize">
-								<th class="text-center bg-primary" colspan="5">First Semester</th>
-							</tr>
-								<tr>
-									<td>
-										<div class="form-group row">	
-												<div class="col-12">
-													<select class="form-control">
-											      <option>Admin</option>
-											      <option>Program Chair</option>
-											    </select>
-												</div>
-											</div>
-									</td>
-									<td class="text-left">Crazy Toys</td>
-									<td>1</td>
-									<td>$20</td>
-									<td>$40</td>
-								</tr>
-								<tr>
-									<td class="text-center">2</td>
-									<td class="text-left">Beautiful flowers</td>
-									<td>2</td>
-									<td>$50</td>
-									<td>$100</td>
-								</tr>
-							<tfoot>
-							<tr>
-								<td colspan="4">total balance :</td>
-								<td>$140</td>
-							</tr>
-							<tr class="text-capitalize">
-								<th class="text-center bg-primary" colspan="5">Second Semester</th>
-							</tr>
-								<tr>
-									<td>
-										<div class="form-group row">	
-												<div class="col-12">
-													<select class="form-control">
-											      <option>Admin</option>
-											      <option>Program Chair</option>
-											    </select>
-												</div>
-											</div>
-									</td>
-									<td class="text-left">Crazy Toys</td>
-									<td>1</td>
-									<td>$20</td>
-									<td>$40</td>
-								</tr>
-								<tr>
-									<td class="text-center">2</td>
-									<td class="text-left">Beautiful flowers</td>
-									<td>2</td>
-									<td>$50</td>
-									<td>$100</td>
-								</tr>
-							<tfoot>
-							<tr>
-								<td colspan="4">total balance :</td>
-								<td>$140</td>
-							</tr>
-							</tfoot>
 						</table>
 									</div>
 								</div>
