@@ -61,9 +61,9 @@ include('header.php'); ?>
 							</tr>
 								<tr>
 									<td>
-										<div class="form-group row">	
+										<div class="form-group row mb-0" >	
 												<div class="col-12">
-													<select class="form-control">
+													<select class="form-control form-control-sm">
 											      <option>Admin</option>
 											      <option>Program Chair</option>
 											    </select>
