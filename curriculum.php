@@ -41,9 +41,18 @@ include('header.php'); ?>
 							<div class="card">
 								<div class="card-body border-primary">
 									<div class="d-sm-flex justify-content-between align-items-center">
-										<h4 class="header-title mb-0">View Students</h4>
+										<h4 class="header-title mb-0">Add Curriculum</h4>
 									</div>
 									<div class="market-status-table mt-4">
+										  <div class="form-group row">
+    <label for="staticEmail" class="col-sm-2 col-form-label">Course</label>
+    <div class="col-sm-3">
+      <select id="inputState" class="form-control">
+        <option selected>Choose...</option>
+        <option>...</option>
+      </select>
+    </div>
+  </div>
 										<table class="table table-bordered table-hover text-right table-sm">
 							<thead>
 								<tr class="text-capitalize">

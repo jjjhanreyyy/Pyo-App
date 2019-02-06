@@ -48,7 +48,7 @@ include('header.php'); ?>
 												<tr>
 													<th class="text-center">Subject Code</th>
 													<th class="text-center">Description</th>
-													<th class="text-center">College</th>
+													<th class="text-center">Prerequisite</th>
 													<th class="text-center">Action</th>
 												</tr>
 											</thead>
@@ -58,7 +58,7 @@ include('header.php'); ?>
 												<tr>
 													<th class="text-center">Subject Code</th>
 													<th class="text-center">Description</th>
-													<th class="text-center">College</th>
+													<th class="text-center">Prerequisite</th>
 													<th class="text-center">Action</th>
 												</tr>
 											</tfoot>
@@ -74,22 +74,36 @@ include('header.php'); ?>
 										<h4 class="header-title mb-0">Add Subjects</h4>
 									</div>
 									<div class="market-status-table mt-4">
-										<form id="addStudent" action="server_side/add_student.php" method="POST">
-											<div class="form-group row">
-												<label class="col-sm-12 col-form-label">Subject Description</label>
-												<div class="col-sm-12">
-													<input type="text" class="form-control" name="lname" />
-												</div>
-											</div>
+										<form id="addSubject" action="server_side/add_subject.php" method="POST">
 											<div class="form-group row">
 												<label class="col-sm-12 col-form-label">Subject Code</label>
 												<div class="col-sm-12">
-													<input type="text" class="form-control" name="gender" />
+													<input type="text" class="form-control" name="subject_code" />
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-sm-12 col-form-label">Subject Description</label>
+												<div class="col-sm-12">
+													<input type="text" class="form-control" name="subject_description" />
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-sm-12 col-form-label">Prerequisite</label>
+												<div class="col-sm-12">
+													<select class="form-control" name="prerequisite">
+											      <option>NONE</option>
+											      <option>1</option>
+											      <option>2</option>
+											      <option>3</option>
+											      <option>4</option>
+											      <option>5</option>
+											    </select>
 												</div>
 											</div>
 											<div class="form-group row">
 												<div class="col-sm-6 offset-sm-3">
 													<!-- Do NOT use name="submit" or id="submit" for the Submit button -->
+													<input type="hidden" name="go_submit">
 													<button type="submit" class="btn btn-primary" name="submitted">Add Subject</button>
 												</div>
 											</div>
@@ -117,6 +131,63 @@ include('header.php'); ?>
 		            }
 		        ]
 			});
+
+
+			document.addEventListener('DOMContentLoaded', function(e) {
+    FormValidation.formValidation(
+        document.getElementById('addSubject'),
+        {
+            fields: {
+                subject_description: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The name is required'
+                        },
+                        stringLength: {
+                            min: 6,
+                            max: 30,
+                            message: 'The name must be more than 6 and less than 30 characters long'
+                        },
+                        regexp: {
+                            regexp: /^[a-zA-Z0-9_ ]+$/,
+                            message: 'The name can only consist of alphabetical, number and underscore'
+                        }
+                    }
+                },
+                subject_code: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The name is required'
+                        },
+                        stringLength: {
+                            min: 6,
+                            max: 30,
+                            message: 'The name must be more than 6 and less than 30 characters long'
+                        },
+                        regexp: {
+                            regexp: /^[a-zA-Z0-9_ ]+$/,
+                            message: 'The name can only consist of alphabetical, number and underscore'
+                        }
+                    }
+                }
+            },
+            plugins: {
+                trigger: new FormValidation.plugins.Trigger(),
+                bootstrap: new FormValidation.plugins.Bootstrap(),
+                submitButton: new FormValidation.plugins.SubmitButton(),
+                defaultSubmit: new FormValidation.plugins.DefaultSubmit(),
+
+                icon: new FormValidation.plugins.Icon({
+                    valid: 'fa fa-check',
+                    invalid: 'fa fa-times',
+                    validating: 'fa fa-refresh'
+                }),
+            },
+        }
+    );
+});
+
+
 		</script>
 	</body>
 </html>

@@ -114,7 +114,7 @@ include('header.php'); ?>
 										<h4 class="header-title mb-0">DataTables</h4>
 									</div>
 									<div class="market-status-table mt-4">
-										<form id="demoForm" method="POST">
+										<form id="demoForm" method="POST" action="server_side/test.php">
         <div class="form-group row">
             <label class="col-sm-3 col-form-label">Product name</label>
             <div class="col-sm-4">
@@ -173,7 +173,7 @@ include('header.php'); ?>
         <div class="form-group row">
             <div class="col-sm-9 offset-sm-3">
                 <!-- Do NOT use name="submit" or id="submit" for the Submit button -->
-                <button type="submit" class="btn btn-primary">Add product</button>
+                <button type="submit" class="btn btn-primary" name="sub">Add product</button>
             </div>
         </div>
     </form>

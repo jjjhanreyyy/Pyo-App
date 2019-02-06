@@ -48,17 +48,30 @@ include('header.php'); ?>
 												<tr>
 													<th class="text-center">Course Code</th>
 													<th class="text-center">Description</th>
-													<th class="text-center">College</th>
 													<th class="text-center">Action</th>
 												</tr>
 											</thead>
 											<tbody>
+												<?php 
+                include ('server_side/connection.php');
+                $sql = "SELECT * FROM tbl_courses";
+                $result=mysqli_query($conn, $sql);
+              ?>
+              <?php while ($row=mysqli_fetch_array($result)) { ?>
+              	<tr>
+													<td><?php echo $row['course_code'];?></td>
+													<td><?php echo $row['course_description'];?></td>
+													<td>
+														<button class="btn btn-sm btn-primary"><span class="fa fa-edit"></span></button>
+														<button class="btn btn-sm btn-primary"><span class="fa fa-search"></span></button>
+													</td>
+												</tr>
+							</td><?php } ?>
 											</tbody>
 											<tfoot>
 											<tr>
 												<th class="text-center">Course Code</th>
 												<th class="text-center">Description</th>
-												<th class="text-center">College</th>
 												<th class="text-center">Action</th>
 											</tr>
 											</tfoot>
@@ -74,38 +87,28 @@ include('header.php'); ?>
 										<h4 class="header-title mb-0">Add Courses</h4>
 									</div>
 									<div class="market-status-table mt-4">
-										<form id="addStudent" action="server_side/add_student.php" method="POST">
-											<div class="form-group row">
-												<label class="col-sm-12 col-form-label">College</label>
-												<div class="col-sm-12">
-													<select class="form-control">
-											      <option>1</option>
-											      <option>2</option>
-											      <option>3</option>
-											      <option>4</option>
-											      <option>5</option>
-											    </select>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-sm-12 col-form-label">Course Description</label>
-												<div class="col-sm-12">
-													<input type="text" class="form-control" name="lname" />
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-sm-12 col-form-label">Course Code</label>
-												<div class="col-sm-12">
-													<input type="text" class="form-control" name="gender" />
-												</div>
-											</div>
-											<div class="form-group row">
-												<div class="col-sm-6 offset-sm-3">
-													<!-- Do NOT use name="submit" or id="submit" for the Submit button -->
-													<button type="submit" class="btn btn-primary" name="submitted">Add Student</button>
-												</div>
-											</div>
-										</form>
+										<form id="demoForm" method="POST" action="server_side/add_course.php">
+								        <div class="form-group row">
+								            <label class="col-sm-12 col-form-label">Course Code</label>
+								            <div class="col-sm-12">
+								                <input type="text" class="form-control" name="course_code" />
+								            </div>
+								        </div>
+
+								        <div class="form-group row">
+								            <label class="col-sm-12 col-form-label">Course Description</label>
+								            <div class="col-sm-12">
+								                <input type="text" class="form-control" name="course_description" />
+								            </div>
+								        </div>
+								        <div class="form-group row">
+								            <div class="col-sm-9 offset-sm-3">
+								                <!-- Do NOT use name="submit" or id="submit" for the Submit button -->
+								                <input type="hidden" name="go_submit">
+								                <button type="submit" class="btn btn-primary">Add product</button>
+								            </div>
+								        </div>
+								    </form>
 									</div>
 								</div>
 							</div>
@@ -129,6 +132,63 @@ include('header.php'); ?>
 		            }
 		        ]
 			});
+
+
+document.addEventListener('DOMContentLoaded', function(e) {
+    FormValidation.formValidation(
+        document.getElementById('demoForm'),
+        {
+            fields: {
+                course_description: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Cannot be blank'
+                        },
+                        stringLength: {
+                            max: 50,
+                            message: 'Must be less than 30 characters long'
+                        },
+                        regexp: {
+                            regexp: /^[a-zA-Z ]+$/,
+                            message: 'Must consist of alphabetical characters only'
+                        }
+                    }
+                },
+                course_code: {
+                    validators: {
+                        notEmpty: {
+                            message: 'Cannot be blank'
+                        },
+                        stringLength: {
+                            max: 10,
+                            message: 'Must be less than 10 characters long'
+                        },
+                        regexp: {
+                            regexp: /^[a-zA-Z ]+$/,
+                            message: 'Must consist of alphabetical characters only'
+                        }
+                    }
+                }
+            },
+            plugins: {
+                trigger: new FormValidation.plugins.Trigger(),
+                bootstrap: new FormValidation.plugins.Bootstrap(),
+                submitButton: new FormValidation.plugins.SubmitButton(),
+                defaultSubmit: new FormValidation.plugins.DefaultSubmit(),
+
+                icon: new FormValidation.plugins.Icon({
+                    valid: 'fa fa-check',
+                    invalid: 'fa fa-times',
+                    validating: 'fa fa-refresh'
+                }),
+            },
+        }
+    );
+});
+
+
+
+
 		</script>
 	</body>
 </html>
