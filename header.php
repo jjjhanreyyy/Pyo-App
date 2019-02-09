@@ -15,8 +15,10 @@
 		<link rel="stylesheet" href="assets/css/default-css.css">
 		<link rel="stylesheet" href="assets/css/styles.css">
 		<link rel="stylesheet" href="assets/css/responsive.css">
-		<link rel="stylesheet" href="assets/vendor/formvalidation/dist/css/formValidation.min.css">
+		<link rel="stylesheet" href="assets/vendor/formvaldation/dist/css/formValidation.min.css">
 		<link rel="stylesheet" href="assets/vendor/DataTables/datatables.min.css">
+		<link rel="stylesheet" href="assets/vendor/Select2/select2.min.css">
+		<link rel="stylesheet" href="assets/vendor/JqueryWizard/dist/css/smart_wizard.min.css">
 		<script src="assets//vendor/Modernizr/modernizr-2.8.3.min.js"></script>
 	</head>
 	<body>
