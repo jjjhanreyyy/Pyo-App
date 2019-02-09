@@ -103,87 +103,21 @@ include('header.php'); ?>
 										<table class="table table-striped table-bordered table-hover table-sm dataex-html5-window" id="myTable">
 											<thead>
 												<tr>
+													<th class="text-center">Evaluation ID</th>
 													<th class="text-center">Student ID</th>
 													<th class="text-center">Name</th>
 													<th class="text-center">Curriculum</th>
-													<th class="text-center">Course</th>
-													<th class="text-center">Last Evaluated</th>
+													<th class="text-center">Date Evaluated</th>
 													<th class="text-center">Actions</th>
 												</tr>
 											</thead>
 											<tbody>
 												<tr>
-													<td>200613113801</td>
-													<td>Jhan Rey Gonzales</td>
-													<td>BSCS 2014</td>
-													<td>BSCS</td>
-													<td>January 16, 2014</td>
-													<td>
-														<button type="button" class="btn btn-outline-primary btn-sm"><span class="fa fa-edit"></span></button>
-														<button type="button" class="btn btn-outline-primary btn-sm"><span class="fa fa-search"></button>
-													</td>
-												</tr>
-<tr>
-													<td>200613113801</td>
-													<td>Jhan Rey Gonzales</td>
-													<td>BSCS 2014</td>
-													<td>BSCS</td>
-													<td>January 16, 2014</td>
-													<td>
-														<button type="button" class="btn btn-outline-primary btn-sm"><span class="fa fa-edit"></span></button>
-														<button type="button" class="btn btn-outline-primary btn-sm"><span class="fa fa-search"></button>
-													</td>
-												</tr>
-												<tr>
-													<td>200613113801</td>
-													<td>Jhan Rey Gonzales</td>
-													<td>BSCS 2014</td>
-													<td>BSCS</td>
-													<td>January 16, 2014</td>
-													<td>
-														<button type="button" class="btn btn-outline-primary btn-sm"><span class="fa fa-edit"></span></button>
-														<button type="button" class="btn btn-outline-primary btn-sm"><span class="fa fa-search"></button>
-													</td>
-												</tr>
-												<tr>
-													<td>200613113801</td>
-													<td>Jhan Rey Gonzales</td>
-													<td>BSCS 2014</td>
-													<td>BSCS</td>
-													<td>January 16, 2014</td>
-													<td>
-														<button type="button" class="btn btn-outline-primary btn-sm"><span class="fa fa-edit"></span></button>
-														<button type="button" class="btn btn-outline-primary btn-sm"><span class="fa fa-search"></button>
-													</td>
-												</tr>
-												<tr>
-													<td>200613113801</td>
-													<td>Jhan Rey Gonzales</td>
-													<td>BSCS 2014</td>
-													<td>BSCS</td>
-													<td>January 16, 2014</td>
-													<td>
-														<button type="button" class="btn btn-outline-primary btn-sm"><span class="fa fa-edit"></span></button>
-														<button type="button" class="btn btn-outline-primary btn-sm"><span class="fa fa-search"></button>
-													</td>
-												</tr>
-												<tr>
-													<td>200613113801</td>
-													<td>Jhan Rey Gonzales</td>
-													<td>BSCS 2014</td>
-													<td>BSCS</td>
-													<td>January 16, 2014</td>
-													<td>
-														<button type="button" class="btn btn-outline-primary btn-sm"><span class="fa fa-edit"></span></button>
-														<button type="button" class="btn btn-outline-primary btn-sm"><span class="fa fa-search"></button>
-													</td>
-												</tr>
-												<tr>
-													<td>200613113801</td>
-													<td>Jhan Rey Gonzales</td>
-													<td>BSCS 2014</td>
-													<td>BSCS</td>
-													<td>January 16, 2014</td>
+													<td class="text-center">00001</td>
+													<td class="text-center">305008242</td>
+													<td class="text-center">Jhan Rey L. Gonzales</td>
+													<td class="text-center">BSCS 2019</td>
+													<td class="text-center">January 12, 2019</td>
 													<td>
 														<button type="button" class="btn btn-outline-primary btn-sm"><span class="fa fa-edit"></span></button>
 														<button type="button" class="btn btn-outline-primary btn-sm"><span class="fa fa-search"></button>
@@ -192,12 +126,12 @@ include('header.php'); ?>
 											</tbody>
 											<tfoot>
 											<tr>
-												<th class="text-center">Student ID</th>
-												<th class="text-center">Name</th>
-												<th class="text-center">Curriculum</th>
-												<th class="text-center">Course</th>
-												<th class="text-center">Date Admitted</th>
-												<th class="text-center">Actions</th>
+												<th class="text-center">Evaluation ID</th>
+													<th class="text-center">Student ID</th>
+													<th class="text-center">Name</th>
+													<th class="text-center">Curriculum</th>
+													<th class="text-center">Date Evaluated</th>
+													<th class="text-center">Actions</th>
 											</tr>
 											</tfoot>
 										</table>

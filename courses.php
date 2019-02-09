@@ -62,8 +62,8 @@ include('header.php'); ?>
 													<td><?php echo $row['course_code'];?></td>
 													<td><?php echo $row['course_description'];?></td>
 													<td>
-														<button class="btn btn-sm btn-primary"><span class="fa fa-edit"></span></button>
-														<button class="btn btn-sm btn-primary"><span class="fa fa-search"></span></button>
+														<button class="btn btn-xs btn-primary"><span class="fa fa-edit"></span></button>
+														<button class="btn btn-xs btn-primary"><span class="fa fa-search"></span></button>
 													</td>
 												</tr>
 							</td><?php } ?>

@@ -7,10 +7,10 @@ include('header.php'); ?>
 						<div class="col-sm-6">
 							<div class="breadcrumbs-area clearfix">
 								<!-- Editing of breadcrumbs here -->
-								<h4 class="page-title pull-left">Dashboard</h4>
+								<h4 class="page-title pull-left">Edit Subject</h4>
 								<ul class="breadcrumbs pull-left">
-									<li><a href="index.php">Home</a></li>
-									<li><span>Dashboard</span></li>
+									<li><a href="subjects.php">Students</a></li>
+									<li><span>Edit Subject</span></li>
 								</ul>
 							</div>
 						</div>
@@ -36,45 +36,15 @@ include('header.php'); ?>
 				<div class="main-content-inner">
 					<!-- Column 12 BEGIN -->
 					<div class="row mt-5 mb-5">
-						<div class="col-lg-8">
+						
+						<div class="col-lg-6 offset-lg-3">
 							<div class="card">
 								<div class="card-body border-primary">
 									<div class="d-sm-flex justify-content-between align-items-center">
-										<h4 class="header-title mb-0">View Subjects</h4>
+										<h4 class="header-title mb-0">Edit Subjects</h4>
 									</div>
 									<div class="market-status-table mt-4">
-										<table class="table table-striped table-bordered table-hover table-sm dataex-html5-window" id="myTable">
-											<thead>
-												<tr>
-													<th class="text-center">Subject Code</th>
-													<th class="text-center">Description</th>
-													<th class="text-center">Prerequisite</th>
-													<th class="text-center">Action</th>
-												</tr>
-											</thead>
-											<tbody>
-											</tbody>
-											<tfoot>
-												<tr>
-													<th class="text-center">Subject Code</th>
-													<th class="text-center">Description</th>
-													<th class="text-center">Prerequisite</th>
-													<th class="text-center">Action</th>
-												</tr>
-											</tfoot>
-										</table>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="col-lg-4">
-							<div class="card">
-								<div class="card-body border-primary">
-									<div class="d-sm-flex justify-content-between align-items-center">
-										<h4 class="header-title mb-0">Add Subjects</h4>
-									</div>
-									<div class="market-status-table mt-4">
-										<form id="addSubject" action="server_side/add_subject.php" method="POST">
+										<form id="editSubject" action="server_side/edit_subject.php" method="POST">
 											<div class="form-group row">
 												<label class="col-sm-12 col-form-label">Subject Code</label>
 												<div class="col-sm-12">
@@ -116,10 +86,7 @@ include('header.php'); ?>
 						</div>
 					</div>
 					<!-- Column 12 END -->
-<form action="server_side/test.php">
-	<button type="submit">s</button>
-<input type="text" name="id" value="100">
-</form>
+
 		<?php include('footer.php'); ?>
 		<script>
 			$('#myTable').DataTable({
@@ -140,7 +107,7 @@ include('header.php'); ?>
 
 			document.addEventListener('DOMContentLoaded', function(e) {
     FormValidation.formValidation(
-        document.getElementById('addSubject'),
+        document.getElementById('editSubject'),
         {
             fields: {
                 subject_description: {

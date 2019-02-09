@@ -115,12 +115,17 @@ include('header.php'); ?>
 									</div>
 									<div class="market-status-table mt-4">
 										<form id="demoForm" method="POST" action="server_side/test.php">
-        <div class="form-group row">
-            <label class="col-sm-3 col-form-label">Product name</label>
+<div class="form-group row">
+            <label class="col-sm-3 col-form-label">Full name</label>
             <div class="col-sm-4">
-                <input type="text" class="form-control" name="name" />
+                <input type="text" class="form-control" name="firstName" placeholder="First name" />
+            </div>
+            <div class="col-sm-4">
+                <input type="text" class="form-control" name="lastName" placeholder="Last name" />
             </div>
         </div>
+
+
 
         <div class="form-group row">
             <label class="col-sm-3 col-form-label">Price</label>
@@ -153,6 +158,18 @@ include('header.php'); ?>
                     <input type="checkbox" class="form-check-input" name="size[]" value="xl" />
                     <label class="form-check-label">XL</label>
                 </div>
+            </div>
+        </div>
+<div class="form-group row">
+            <label class="col-sm-2 col-form-label">Full name</label>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" name="firstName" placeholder="First name" />
+            </div>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" name="lastName" placeholder="Last name" />
+            </div>
+            <div class="col-sm-3">
+                <input type="text" class="form-control" name="lastName" placeholder="Last name" />
             </div>
         </div>
 
@@ -253,6 +270,20 @@ document.addEventListener('DOMContentLoaded', function(e) {
                 bootstrap: new FormValidation.plugins.Bootstrap(),
                 submitButton: new FormValidation.plugins.SubmitButton(),
                 defaultSubmit: new FormValidation.plugins.DefaultSubmit(),
+                bootstrap: new FormValidation.plugins.Bootstrap({
+                    rowSelector: function(field, ele) {
+                        // field is the field name
+                        // ele is the field element
+                        switch (field) {
+                            case 'firstName':
+                            case 'lastName':
+                                return '.col-sm-3';
+                            
+                            default:
+                                return '.form-group';
+                        }
+                    }
+                }),
 
                 icon: new FormValidation.plugins.Icon({
                     valid: 'fa fa-check',
@@ -263,6 +294,7 @@ document.addEventListener('DOMContentLoaded', function(e) {
         }
     );
 });
+
 </script>
 	</body>
 </html>

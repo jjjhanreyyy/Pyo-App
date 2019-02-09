@@ -1,5 +1,10 @@
+<?php 
+$pagename="Boilerplate";
 
+ ?>
 <?php include('header.php')?>
+<link rel="stylesheet" href="assets/vendor/JqueryWizard/dist/jquery.wizard.css">
+<script src="assets/vendor/JqueryWizard/dist/jquery.wizard.js"></script>
 
 				<div class="main-content-inner">
 					<div class="sales-report-area mt-5 mb-5">
@@ -250,278 +255,33 @@
 										<h4 class="header-title mb-0">DataTables</h4>
 									</div>
 									<div class="market-status-table mt-4">
-										<table class="table table-striped table-bordered dataex-html5-window" id="myTable">
-											<thead>
-												<tr>
-													<th>Name</th>
-													<th>Position</th>
-													<th>Office</th>
-													<th>Age</th>
-													<th>Start date</th>
-													<th>Salary</th>
-												</tr>
-											</thead>
-											<tbody>
-												<tr>
-													<td>Cara Stevens</td>
-													<td>Sales Assistant</td>
-													<td>New York</td>
-													<td>46</td>
-													<td>2011/12/06</td>
-													<td>$145,600</td>
-												</tr>
-												<tr>
-													<td>Hermione Butler</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2011/03/21</td>
-													<td>$356,250</td>
-												</tr>
-												<tr>
-													<td>Lael Greer</td>
-													<td>Systems Administrator</td>
-													<td>London</td>
-													<td>21</td>
-													<td>2009/02/27</td>
-													<td>$103,500</td>
-												</tr>
-												<tr>
-													<td>Jonas Alexander</td>
-													<td>Developer</td>
-													<td>San Francisco</td>
-													<td>30</td>
-													<td>2010/07/14</td>
-													<td>$86,500</td>
-												</tr>
-												<tr>
-													<td>Shad Decker</td>
-													<td>Regional Director</td>
-													<td>Edinburgh</td>
-													<td>51</td>
-													<td>2008/11/13</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Michael Bruce</td>
-													<td>Javascript Developer</td>
-													<td>Singapore</td>
-													<td>29</td>
-													<td>2011/06/27</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Donna Snider</td>
-													<td>Customer Support</td>
-													<td>New York</td>
-													<td>27</td>
-													<td>2011/01/25</td>
-													<td>$112,000</td>
-												</tr>
-																								<tr>
-													<td>Hermione Butler</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2011/03/21</td>
-													<td>$356,250</td>
-												</tr>
-												<tr>
-													<td>Lael Greer</td>
-													<td>Systems Administrator</td>
-													<td>London</td>
-													<td>21</td>
-													<td>2009/02/27</td>
-													<td>$103,500</td>
-												</tr>
-												<tr>
-													<td>Jonas Alexander</td>
-													<td>Developer</td>
-													<td>San Francisco</td>
-													<td>30</td>
-													<td>2010/07/14</td>
-													<td>$86,500</td>
-												</tr>
-												<tr>
-													<td>Shad Decker</td>
-													<td>Regional Director</td>
-													<td>Edinburgh</td>
-													<td>51</td>
-													<td>2008/11/13</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Michael Bruce</td>
-													<td>Javascript Developer</td>
-													<td>Singapore</td>
-													<td>29</td>
-													<td>2011/06/27</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Donna Snider</td>
-													<td>Customer Support</td>
-													<td>New York</td>
-													<td>27</td>
-													<td>2011/01/25</td>
-													<td>$112,000</td>
-												</tr>
-																								<tr>
-													<td>Hermione Butler</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2011/03/21</td>
-													<td>$356,250</td>
-												</tr>
-												<tr>
-													<td>Lael Greer</td>
-													<td>Systems Administrator</td>
-													<td>London</td>
-													<td>21</td>
-													<td>2009/02/27</td>
-													<td>$103,500</td>
-												</tr>
-												<tr>
-													<td>Jonas Alexander</td>
-													<td>Developer</td>
-													<td>San Francisco</td>
-													<td>30</td>
-													<td>2010/07/14</td>
-													<td>$86,500</td>
-												</tr>
-												<tr>
-													<td>Shad Decker</td>
-													<td>Regional Director</td>
-													<td>Edinburgh</td>
-													<td>51</td>
-													<td>2008/11/13</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Michael Bruce</td>
-													<td>Javascript Developer</td>
-													<td>Singapore</td>
-													<td>29</td>
-													<td>2011/06/27</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Donna Snider</td>
-													<td>Customer Support</td>
-													<td>New York</td>
-													<td>27</td>
-													<td>2011/01/25</td>
-													<td>$112,000</td>
-												</tr>
-																								<tr>
-													<td>Hermione Butler</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2011/03/21</td>
-													<td>$356,250</td>
-												</tr>
-												<tr>
-													<td>Lael Greer</td>
-													<td>Systems Administrator</td>
-													<td>London</td>
-													<td>21</td>
-													<td>2009/02/27</td>
-													<td>$103,500</td>
-												</tr>
-												<tr>
-													<td>Jonas Alexander</td>
-													<td>Developer</td>
-													<td>San Francisco</td>
-													<td>30</td>
-													<td>2010/07/14</td>
-													<td>$86,500</td>
-												</tr>
-												<tr>
-													<td>Shad Decker</td>
-													<td>Regional Director</td>
-													<td>Edinburgh</td>
-													<td>51</td>
-													<td>2008/11/13</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Michael Bruce</td>
-													<td>Javascript Developer</td>
-													<td>Singapore</td>
-													<td>29</td>
-													<td>2011/06/27</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Donna Snider</td>
-													<td>Customer Support</td>
-													<td>New York</td>
-													<td>27</td>
-													<td>2011/01/25</td>
-													<td>$112,000</td>
-												</tr>
-																								<tr>
-													<td>Hermione Butler</td>
-													<td>Regional Director</td>
-													<td>London</td>
-													<td>47</td>
-													<td>2011/03/21</td>
-													<td>$356,250</td>
-												</tr>
-												<tr>
-													<td>Lael Greer</td>
-													<td>Systems Administrator</td>
-													<td>London</td>
-													<td>21</td>
-													<td>2009/02/27</td>
-													<td>$103,500</td>
-												</tr>
-												<tr>
-													<td>Jonas Alexander</td>
-													<td>Developer</td>
-													<td>San Francisco</td>
-													<td>30</td>
-													<td>2010/07/14</td>
-													<td>$86,500</td>
-												</tr>
-												<tr>
-													<td>Shad Decker</td>
-													<td>Regional Director</td>
-													<td>Edinburgh</td>
-													<td>51</td>
-													<td>2008/11/13</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Michael Bruce</td>
-													<td>Javascript Developer</td>
-													<td>Singapore</td>
-													<td>29</td>
-													<td>2011/06/27</td>
-													<td>$183,000</td>
-												</tr>
-												<tr>
-													<td>Donna Snider</td>
-													<td>Customer Support</td>
-													<td>New York</td>
-													<td>27</td>
-													<td>2011/01/25</td>
-													<td>$112,000</td>
-												</tr>
-											</tbody>
-											<tfoot>
-											<tr>
-												<th>Name</th>
-												<th>Position</th>
-												<th>Office</th>
-												<th>Age</th>
-												<th>Start date</th>
-												<th>Salary</th>
-											</tr>
-											</tfoot>
-										</table>
+										<div data-wizard-init>
+		  <ul class="steps">
+			<li data-step="1">Details</li>
+			<li data-step="2">Address</li>
+			<li data-step="3">Template</li>
+		  </ul>
+		  <div class="steps-content">
+			<div data-step="1">
+			  <h4>Details</h4>
+			  <p>
+				Sed ac nulla nec turpis pharetra rutrum et at mauris. Phasellus eleifend molestie est, eu lacinia nisi gravida non. Nullam sit amet pulvinar dolor. Etiam id fermentum erat. Proin quis rutrum sapien.
+			  </p>
+			</div>
+			<div data-step="2">
+			  <h4>Address</h4>
+			  <p>
+			  Sed eleifend lobortis dolor, vel hendrerit neque interdum eget. Proin ac hendrerit diam. Mauris tristique libero vel condimentum sodales. Ut sed augue euismod, tincidunt nunc at, rutrum risus. Cras consequat purus sit amet augue varius; vitae ornare erat commodo. In hac habitasse platea dictumst. Nunc lobortis auctor ligula dictum scelerisque. Integer sed justo rutrum, rutrum tortor nec, feugiat nulla?
+			  </p>
+			</div>
+			<div data-step="3">
+			  <h4>Template</h4>
+			  <p>
+				Donec pharetra vel felis facilisis aliquam! Nunc consequat, lorem a scelerisque porttitor, orci neque mattis velit; at rhoncus quam felis a lorem. Cras dictum augue elit, non tempus leo pharetra nec! Nunc iaculis ex quis ante elementum varius. Curabitur a ultrices risus. Etiam elementum magna a eros maximus ornare. Aenean lectus dui, venenatis non tincidunt sed, dignissim at turpis? Vestibulum varius tempor turpis eget laoreet. Phasellus hendrerit purus vel arcu dapibus ullamcorper? Aliquam et nunc sagittis, semper orci eu, eleifend turpis! Integer eget aliquet libero. Vestibulum rutrum, ipsum nec bibendum sagittis, leo libero tristique erat, ut euismod lorem tortor quis lorem. Vivamus et tellus eu purus tempor posuere.
+			  </p>
+			</div>
+		  </div>
+		</div>
 									</div>
 								</div>
 							</div>

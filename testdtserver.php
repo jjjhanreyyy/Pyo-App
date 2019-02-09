@@ -30,81 +30,81 @@ include('header.php'); ?>
 
 
 				<div class="main-content-inner">
-<div class="col-lg-12 mt-5">
-                        <div class="card">
-                            <div class="card-body">
-                                <div class="invoice-area">
-                                    <div class="invoice-head">
-                                        <div class="row">
-                                            <div class="col-md-12 text-center">
-                                                <span class="">Isabela State University</span> <br>
-                                                <span class="">Cauayan Campus</span> <br>
-                                                <span class="">PERMANENT RECORD</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <ul class="invoice-date">
-                                                <li>NAme	 : <strong">Jhan Rey L. Gonzales</strong></li>
-                                                <li>Course : BSCS</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6 text-md-right">
-                                            <ul class="invoice-date">
-                                                <li>Date of Admission	: January 2018</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="invoice-table table-responsive mt-5">
-                                        <table class="table table-bordered table-hover text-right table-sm">
-                                            <thead>
-                                                <tr class="text-capitalize">
-                                                    <th class="text-center" style="width: 15%;">Course Code</th>
-                                                    <th class="text-left" style="width: 50%; min-width: 130px;">Descriptive Title</th>
-                                                    <th>Grade</th>
-                                                    <th style="min-width: 100px">Re-exam</th>
-                                                    <th>Remarks</th>
-                                                </tr>
-                                            </thead>
-                                                <tr class="text-capitalize">
-                                                    <th class="text-center bg-primary" colspan="5">First Year</th>
-                                                </tr>
-                                                <tr class="text-capitalize">
-                                                    <th class="text-center bg-primary" colspan="5">First Semester</th>
-                                                </tr>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="text-center">Program1</td>
-                                                    <td class="text-left">Crazy Toys</td>
-                                                    <td>1</td>
-                                                    <td>$20</td>
-                                                    <td>$40</td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="text-center">2</td>
-                                                    <td class="text-left">Beautiful flowers</td>
-                                                    <td>2</td>
-                                                    <td>$50</td>
-                                                    <td>$100</td>
-                                                </tr>
-                                            </tbody>
-                                            <tfoot>
-                                                <tr>
-                                                    <td colspan="4">total balance :</td>
-                                                    <td>$140</td>
-                                                </tr>
-                                            </tfoot>
-                                        </table>
-                                    </div>
-                                </div>
-                                <div class="invoice-buttons text-right">
-                                    <a href="#" class="invoice-btn">print invoice</a>
-                                    <a href="#" class="invoice-btn">send invoice</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+	<div class="col-lg-12 mt-5">
+		<div class="card">
+			<div class="card-body">
+				<div class="invoice-area">
+					<div class="invoice-head">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<span class="">Isabela State University</span> <br>
+								<span class="">Cauayan Campus</span> <br>
+								<span class="">PERMANENT RECORD</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<ul class="invoice-date">
+								<li>NAme	 : <strong">Jhan Rey L. Gonzales</strong></li>
+								<li>Course : BSCS</li>
+							</ul>
+						</div>
+						<div class="col-md-6 text-md-right">
+							<ul class="invoice-date">
+								<li>Date of Admission	: January 2018</li>
+							</ul>
+						</div>
+					</div>
+					<div class="invoice-table table-responsive mt-5">
+						<table class="table table-bordered table-hover text-right table-sm">
+							<thead>
+								<tr class="text-capitalize">
+									<th class="text-center" style="width: 15%;">Course Code</th>
+									<th class="text-left" style="width: 50%; min-width: 130px;">Descriptive Title</th>
+									<th>Grade</th>
+									<th style="min-width: 100px">Re-exam</th>
+									<th>Remarks</th>
+								</tr>
+							</thead>
+							<tr class="text-capitalize">
+								<th class="text-center bg-primary" colspan="5">First Year</th>
+							</tr>
+							<tr class="text-capitalize">
+								<th class="text-center bg-primary" colspan="5">First Semester</th>
+							</tr>
+							<tbody>
+								<tr>
+									<td class="text-center">Program1</td>
+									<td class="text-left">Crazy Toys</td>
+									<td>1</td>
+									<td>$20</td>
+									<td>$40</td>
+								</tr>
+								<tr>
+									<td class="text-center">2</td>
+									<td class="text-left">Beautiful flowers</td>
+									<td>2</td>
+									<td>$50</td>
+									<td>$100</td>
+								</tr>
+							</tbody>
+							<tfoot>
+							<tr>
+								<td colspan="4">total balance :</td>
+								<td>$140</td>
+							</tr>
+							</tfoot>
+						</table>
+					</div>
+				</div>
+				<div class="invoice-buttons text-right">
+					<a href="#" class="invoice-btn">print invoice</a>
+					<a href="#" class="invoice-btn">send invoice</a>
+				</div>
+			</div>
+		</div>
+	</div>
 					<!-- Column 12 BEGIN -->
 					<div class="row mt-5 mb-5">
 						<div class="col-12">
@@ -205,6 +205,8 @@ include('header.php'); ?>
 						</div>
 					</div>
 					<!-- Column 12 END -->
+
+					
 
 		<?php include('footer.php'); ?>
 		<script>
