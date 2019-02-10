@@ -48,7 +48,8 @@ include('header.php'); ?>
 												<tr>
 													<th class="text-center">Subject Code</th>
 													<th class="text-center">Description</th>
-													<!-- <th class="text-center">Action</th> -->
+													<th class="text-center">Units</th>
+													<th class="text-center">Prerequisite</th>
 												</tr>
 											</thead>
 											<tbody>
@@ -61,6 +62,8 @@ include('header.php'); ?>
 												<tr>
 													<td><?php echo $row['subject_code'];?></td>
 													<td><?php echo $row['subject_description'];?></td>
+													<td><?php echo $row['units'];?></td>
+													<td><?php echo $row['prerequisite'];?></td>
 <!-- 													<td>
 														<button class="btn btn-sm btn-primary btn-xs"><span class="fa fa-search"></span></button>
 														<button class="btn btn-sm btn-primary btn-xs"><span class="fa fa-edit"></span></button>
@@ -72,7 +75,9 @@ include('header.php'); ?>
 												<tr>
 													<th class="text-center">Subject Code</th>
 													<th class="text-center">Description</th>
-													<!-- <th class="text-center">Action</th> -->
+													<th class="text-center">Units</th>
+													<th class="text-center">Prerequisite</th>
+
 												</tr>
 											</tfoot>
 										</table>
@@ -104,6 +109,12 @@ include('header.php'); ?>
 												<label class="col-sm-12 col-form-label">Units</label>
 												<div class="col-sm-12">
 													<input type="text" class="form-control" name="subject_units" />
+												</div>
+											</div>
+											<div class="form-group row">
+												<label class="col-sm-12 col-form-label">Prerequisite</label>
+												<div class="col-sm-12">
+													<input type="text" class="form-control" name="prerequisite" />
 												</div>
 											</div>
 											<div class="form-group row">
