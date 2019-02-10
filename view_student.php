@@ -1,5 +1,5 @@
 <?php 
-$pagename='Students';
+$pagename='View Student';
 include('header.php'); ?>
 				<!-- Breadcrumb and user panel BEGIN -->
 				<div class="page-title-area">
@@ -35,109 +35,7 @@ include('header.php'); ?>
 </div>
 
 				<div class="main-content-inner">
-					<!-- Add student panel BEGIN -->
-					<div class="row mt-5 mb-5">
-						<div class="col-12">
-							<div class="card">
-								<div class="card-body">
-									<div class="d-sm-flex justify-content-between align-items-center">
-										<h4 class="header-title mb-0">Add Student</h4>
-									</div>
-									<div class="market-status-table mt-4">
-										<form id="addStudent" action="server_side/add_student.php" method="POST">
-											<div class="form-group row">
-												<label class="col-sm-2 col-form-label">Full name</label>
-												<div class="col-sm-3">
-													<input type="text" class="form-control" name="fname" placeholder="First name" />
-												</div>
-												<div class="col-sm-3">
-													<input type="text" class="form-control" name="mname" placeholder="Middle name" />
-												</div>
-												<div class="col-sm-3">
-													<input type="text" class="form-control" name="lname" placeholder="Last name" />
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-sm-2 col-form-label">Address</label>
-												<div class="col-sm-4">
-													<input type="text" class="form-control" name="address" />
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-sm-2 col-form-label">Gender</label>
-												<div class="col-sm-3">
-													<select class="form-control" name="gender">
-											      <option>Admin</option>
-											      <option>Program Chair</option>
-											    </select>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-sm-2 col-form-label">Birtdate</label>
-												<div class="col-sm-3">
-													<input type="text" class="form-control" name="birthdate" />
-												</div>
-											</div>
-											<hr>
-											<div class="form-group row">
-												<label class="col-sm-2 col-form-label">Mother's Name</label>
-												<div class="col-sm-3">
-													<input type="text" class="form-control" name="motherName" />
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-sm-2 col-form-label">Father's Name</label>
-												<div class="col-sm-3">
-													<input type="text" class="form-control" name="fatherName" />
-												</div>
-											</div>
-											<hr>
-											<div class="form-group row">
-												<label class="col-sm-2 col-form-label">Student ID</label>
-												<div class="col-sm-3">
-													<input type="text" class="form-control" name="student_id" />
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-sm-2 col-form-label">Course</label>
-												<div class="col-sm-3">
-													<select class="form-control" name="course">
-											      <option>1</option>
-											      <option>2</option>
-											      <option>3</option>
-											      <option>4</option>
-											      <option>5</option>
-											    </select>
-												</div>
-											</div>
-											<div class="form-group row">
-												<label class="col-sm-2 col-form-label">Curriculum</label>
-												<div class="col-sm-3">
-													<select class="form-control" name="curriculum">
-											      <option>1</option>
-											      <option>2</option>
-											      <option>3</option>
-											      <option>4</option>
-											      <option>5</option>
-											    </select>
-												</div>
-											</div>
 
-											<div class="form-group row">
-												<div class="col-sm-6 offset-sm-3">
-													<!-- Do NOT use name="submit" or id="submit" for the Submit button -->
-													<input type="hidden" name="go_submit" value="student">
-													<button type="submit" class="btn btn-primary">Add Student</button>
-												</div>
-											</div>
-										</form>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<!-- Add studen panel END -->
-					
 					<!-- Column 12 BEGIN -->
 					<div class="row mt-5 mb-5">
 						<div class="col-12">
@@ -147,39 +45,119 @@ include('header.php'); ?>
 										<h4 class="header-title mb-0">Students</h4>
 									</div>
 									<div class="market-status-table mt-4">
-										<table class="table table-striped table-bordered table-hover table-sm dataex-html5-window" id="myTable">
-											<thead>
-												<tr>
-													<th class="text-center">Student ID</th>
-													<th class="text-center">Name</th>
-													<th class="text-center">Curriculum</th>
-													<th class="text-center">Course</th>
-													<th class="text-center">Date Admitted</th>
-													<th class="text-center">Actions</th>
-												</tr>
-											</thead>
-											<tbody>
-												            <?php 
-                include ('server_side/connection.php');
-                $sql = "SELECT * FROM tbl_students";
-                $result=mysqli_query($conn, $sql);
-              ?>
-              <?php while ($row=mysqli_fetch_array($result)) { ?>
-												<tr>
-													<td><?php echo $row['student_id'];?></td>
-													<td><?php echo $row['fname'].' '. $row['lname'];?></td>
-													<td><?php echo $row['student_id'];?></td>
-													<td><?php echo $row['course'];?></td>
-													<td><?php echo $row['date_admitted'];?></td>
-													<td>
-														<button class="btn btn-sm btn-primary btn-xs"><span class="fa fa-search"></span></button>
-														<button class="btn btn-sm btn-primary btn-xs"><span class="fa fa-edit"></span></button>
-													</td>
-												</tr>
-							</td><?php } ?>
-												
-											</tfoot>
-										</table>
+										<ul class="nav nav-tabs" id="myTab" role="tablist">
+  <li class="nav-item">
+    <a class="nav-link active" id="personal-tab" data-toggle="tab" href="#personal" role="tab" aria-controls="personal" aria-selected="true">Personal Info</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link" id="grades-tab" data-toggle="tab" href="#grades" role="tab" aria-controls="grades" aria-selected="false">Grades</a>
+  </li>
+</ul>
+<div class="tab-content" id="myTabContent">
+  <div class="tab-pane fade show active" id="personal" role="tabpanel" aria-labelledby="personal-tab">
+  	<div class="card">
+			<div class="card-body">
+				<div class="invoice-area">
+					<div class="row">
+						<div class="col-md-6">
+							<ul class="invoice-date">
+								<li>Name	 : <strong">Jhan Rey L. Gonzales</strong></li>
+								<li>Course : BSCS</li>
+							</ul>
+						</div>
+						<div class="col-md-6 text-md-right">
+							<ul class="invoice-date">
+								<li>Date of Admission	: January 2018</li>
+							</ul>
+						</div>
+					</div>
+					<div class="invoice-table table-responsive mt-5">
+						
+					</div>
+				</div>
+				<div class="invoice-buttons text-right">
+					<a href="#" class="invoice-btn">print invoice</a>
+					<a href="#" class="invoice-btn">send invoice</a>
+				</div>
+			</div>
+		</div>
+  </div>
+  <div class="tab-pane fade" id="grades" role="tabpanel" aria-labelledby="grades-tab">
+  	<div class="card">
+			<div class="card-body">
+				<div class="invoice-area">
+					<div class="invoice-head">
+						<div class="row">
+							<div class="col-md-12 text-center">
+								<span class="">Isabela State University</span> <br>
+								<span class="">Cauayan Campus</span> <br>
+								<span class="">PERMANENT RECORD</span>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-6">
+							<ul class="invoice-date">
+								<li>NAme	 : <strong">Jhan Rey L. Gonzales</strong></li>
+								<li>Course : BSCS</li>
+							</ul>
+						</div>
+						<div class="col-md-6 text-md-right">
+							<ul class="invoice-date">
+								<li>Date of Admission	: January 2018</li>
+							</ul>
+						</div>
+					</div>
+					<div class="invoice-table table-responsive mt-5">
+						<table class="table table-bordered table-hover text-right table-sm">
+							<thead>
+								<tr class="text-capitalize">
+									<th class="text-center" style="width: 15%;">Course Code</th>
+									<th class="text-left" style="width: 50%; min-width: 130px;">Descriptive Title</th>
+									<th>Grade</th>
+									<th style="min-width: 100px">Re-exam</th>
+									<th>Remarks</th>
+								</tr>
+							</thead>
+							<tr class="text-capitalize">
+								<th class="text-center bg-primary" colspan="5">First Year</th>
+							</tr>
+							<tr class="text-capitalize">
+								<th class="text-center bg-primary" colspan="5">First Semester</th>
+							</tr>
+							<tbody>
+								<tr>
+									<td class="text-center">Program1</td>
+									<td class="text-left">Crazy Toys</td>
+									<td>1</td>
+									<td>$20</td>
+									<td>$40</td>
+								</tr>
+								<tr>
+									<td class="text-center">2</td>
+									<td class="text-left">Beautiful flowers</td>
+									<td>2</td>
+									<td>$50</td>
+									<td>$100</td>
+								</tr>
+							</tbody>
+<!-- 							<tfoot>
+							<tr>
+								<td colspan="4">CurrentGeneral Weighted Average</td>
+								<td>$140</td>
+							</tr>
+							</tfoot> -->
+						</table>
+					</div>
+				</div>
+				<div class="invoice-buttons text-right">
+					<a href="#" class="invoice-btn">print invoice</a>
+					<a href="#" class="invoice-btn">send invoice</a>
+				</div>
+			</div>
+		</div>
+  </div>
+</div>
 									</div>
 								</div>
 							</div>

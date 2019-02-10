@@ -48,7 +48,7 @@ include('header.php'); ?>
 												<tr>
 													<th class="text-center">Course Code</th>
 													<th class="text-center">Description</th>
-													<th class="text-center">Action</th>
+													<!-- <th class="text-center">Action</th> -->
 												</tr>
 											</thead>
 											<tbody>
@@ -61,10 +61,10 @@ include('header.php'); ?>
               	<tr>
 													<td><?php echo $row['course_code'];?></td>
 													<td><?php echo $row['course_description'];?></td>
-													<td>
+<!-- 													<td>
 														<button class="btn btn-xs btn-primary"><span class="fa fa-edit"></span></button>
 														<button class="btn btn-xs btn-primary"><span class="fa fa-search"></span></button>
-													</td>
+													</td> -->
 												</tr>
 							</td><?php } ?>
 											</tbody>
@@ -72,7 +72,7 @@ include('header.php'); ?>
 											<tr>
 												<th class="text-center">Course Code</th>
 												<th class="text-center">Description</th>
-												<th class="text-center">Action</th>
+												<!-- <th class="text-center">Action</th> -->
 											</tr>
 											</tfoot>
 										</table>

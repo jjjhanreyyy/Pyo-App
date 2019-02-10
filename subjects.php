@@ -48,18 +48,31 @@ include('header.php'); ?>
 												<tr>
 													<th class="text-center">Subject Code</th>
 													<th class="text-center">Description</th>
-													<th class="text-center">Prerequisite</th>
-													<th class="text-center">Action</th>
+													<!-- <th class="text-center">Action</th> -->
 												</tr>
 											</thead>
 											<tbody>
+																								            <?php 
+                include ('server_side/connection.php');
+                $sql = "SELECT * FROM tbl_subjects";
+                $result=mysqli_query($conn, $sql);
+              ?>
+              <?php while ($row=mysqli_fetch_array($result)) { ?>
+												<tr>
+													<td><?php echo $row['subject_code'];?></td>
+													<td><?php echo $row['subject_description'];?></td>
+<!-- 													<td>
+														<button class="btn btn-sm btn-primary btn-xs"><span class="fa fa-search"></span></button>
+														<button class="btn btn-sm btn-primary btn-xs"><span class="fa fa-edit"></span></button>
+													</td> -->
+												</tr>
+							</td><?php } ?>
 											</tbody>
 											<tfoot>
 												<tr>
 													<th class="text-center">Subject Code</th>
 													<th class="text-center">Description</th>
-													<th class="text-center">Prerequisite</th>
-													<th class="text-center">Action</th>
+													<!-- <th class="text-center">Action</th> -->
 												</tr>
 											</tfoot>
 										</table>
@@ -88,20 +101,11 @@ include('header.php'); ?>
 												</div>
 											</div>
 											<div class="form-group row">
-												<label class="col-sm-12 col-form-label">Prerequisite</label>
+												<label class="col-sm-12 col-form-label">Units</label>
 												<div class="col-sm-12">
-													<select class="form-control" name="prerequisite">
-														<option value="x">NONE</option>
-											    <?php 
-                include ('server_side/connection.php');
-                $sql = "SELECT * FROM tbl_subjects";
-                $result=mysqli_query($conn, $sql);
-                 while ($row=mysqli_fetch_array($result)) { ?>
-												<option value=<?php echo $row['subject_code'];?>><?php echo $row['subject_code'];?></option>
-												<?php } ?>
-										</select>
-											</div>	
-									</div>
+													<input type="text" class="form-control" name="subject_units" />
+												</div>
+											</div>
 											<div class="form-group row">
 												<div class="col-sm-6 offset-sm-3">
 													<!-- Do NOT use name="submit" or id="submit" for the Submit button -->
@@ -158,6 +162,13 @@ include('header.php'); ?>
                     }
                 },
                 prerequisite: {
+                    validators: {
+                        notEmpty: {
+                            message: 'The name is required'
+                        }
+                    }
+                },
+                subject_units: {
                     validators: {
                         notEmpty: {
                             message: 'The name is required'
